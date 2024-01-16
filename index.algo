@@ -1,0 +1,11 @@
+FUNCTION check(ch=string,i=INTEGER) : BOOLEAN
+
+BEGIN
+    IF (ch=="" and (long(ch)=1)) THEN
+       RETURN false;
+           else IF (ch[0]==ch[long(ch)-1]) THEN
+            RETURN true
+            else
+            RETURN check(ch,i)
+           END_IF
+END
